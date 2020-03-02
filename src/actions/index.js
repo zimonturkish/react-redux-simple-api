@@ -1,5 +1,5 @@
 export const fetchPosts = () => {
   return {
-    type: "FETC_POSTS"
+    type: "FETCH_POSTS"
   };
 };
