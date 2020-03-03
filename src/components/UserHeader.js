@@ -14,7 +14,7 @@ class UserHeader extends React.Component {
       return null;
     }
 
-    return <div>UserHeader</div>;
+    return <div className="header">{user.name}</div>;
   }
 }
 
@@ -22,4 +22,4 @@ const mapStateToProps = state => {
   return { users: state.users };
 };
 
-export default connect(null, { fetchUser })(UserHeader);
+export default connect(mapStateToProps, { fetchUser })(UserHeader);
